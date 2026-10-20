@@ -248,7 +248,7 @@ body {
 .boas-vindas p {
     margin: 0;
     color: #969b97;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 /* ===== GRADE DOS CARDS ======= */
@@ -261,7 +261,7 @@ body {
 /* Card individual */
 
 .card-consumo {
-    width: 95%;
+    width: 96%;
     padding: 5px;
     min-height: 150px;
     border: 1px solid #e9ebe9;
@@ -296,7 +296,7 @@ body {
 
 .card-titulo {
     color: #777d78;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 530;
     line-height: 1.4;
 }
@@ -363,7 +363,7 @@ body {
 
 .card-valor span {
     color: #7E7E7E;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 700;
 }
 
@@ -371,7 +371,7 @@ body {
 
 .card-descricao {
     color: #969b97;
-    font-size: 7px;
+    font-size: 10px;
     line-height: 1.3;
 }
 
@@ -430,5 +430,260 @@ body {
 
     .card-consumo {
         min-height: 125px;
+    }
+}
+
+/* ======== PAINEL EXPLORAR - ECO LAR ========== */
+
+.secao-explorar {
+    width: 100%;
+    max-width: 600px;
+    margin: 35px auto 0;
+    padding: 0 16px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 35px 0 0 auto; 
+}
+
+.painel-explorar {
+    width: 100%;
+    padding: 28px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #78d492, #62c980);
+    color: #fff;
+    box-shadow: 0 5px 16px rgba(53, 173, 96, 0.10);
+}
+
+.painel-explorar h2 {
+    margin: 0 0 5px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.explorar-descricao {
+    margin-bottom: 22px;
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 13px;
+}
+
+.explorar-botoes {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.botao-explorar {
+    display: flex;
+    min-height: 105px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 13px;
+
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.botao-explorar i {
+    font-size: 25px;
+    line-height: 1;
+}
+
+.botao-explorar span {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.botao-explorar:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.19);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(30, 100, 50, 0.10);
+}
+
+.botao-explorar:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+/* Atalho maior para conhecer o projeto */
+
+.botao-explorar-destaque {
+    grid-column: span 2;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.explorar-marca {
+    font-size: 27px !important;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.explorar-marca strong {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+/* =========== RODAPÉ - ECO LAR ================ */
+
+.rodape {
+    margin-top: 75px;
+    padding: 42px 24px 0;
+    background-color: #f5f8f5;
+    border-top: 1px solid #e5ebe5;
+    color: #59635b;
+}
+
+.rodape-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+}
+
+/* Equipe à esquerda */
+
+.rodape-equipe {
+    max-width: 350px;
+}
+
+.rodape-marca {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #35ad60;
+    font-size: 23px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.rodape-logo {
+    width: 43px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.rodape-subtitulo {
+    margin: 16px 0 10px;
+    color: #737d74;
+    font-size: 13px;
+}
+
+.lista-integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-integrantes li {
+    padding: 6px 11px;
+    border: 1px solid #e0e9e0;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #59635b;
+    font-size: 12px;
+}
+
+.rodape-mensagem {
+    margin: 18px 0 0;
+    color: #35ad60;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* Faixa inferior */
+
+.rodape-final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 18px 0;
+
+    border-top: 1px solid #e1e8e1;
+}
+
+.rodape-final p {
+    margin: 0;
+    color: #8a938b;
+    font-size: 11px;
+}
+
+/* ===== RESPONSIVIDADE ========= */
+
+@media (max-width: 767.98px) {
+    .secao-explorar {
+        padding: 0 18px;
+    }
+
+    .painel-explorar {
+        padding: 22px 16px;
+    }
+
+    .explorar-botoes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .botao-explorar {
+        min-height: 100px;
+    }
+
+    .rodape {
+        margin-top: 45px;
+        padding: 32px 22px 0;
+    }
+
+    .rodape-container {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .rodape-navegacao {
+        width: 100%;
+    }
+
+    .rodape-navegacao ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .rodape-final {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    .painel-explorar {
+        padding: 18px 12px;
+    }
+
+    .rodape-navegacao ul {
+        grid-template-columns: 1fr;
     }
 }
