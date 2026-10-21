@@ -115,7 +115,7 @@
 
     <main id="inicio">
         <!-- RESUMO DO CONSUMO DA RESIDÊNCIA -->
-        <section class="dashboard container" id="inicio">
+        <section class="dashboard container">
 
             <!-- Título da seção -->
             <div class="boas-vindas">
@@ -269,9 +269,78 @@
         </section>
         <!-- O conteúdo da página será adicionado aqui. -->
         <section id="casa"></section>
-        <section id="equipamentos"></section>
+        
+<!-- PARTE INFERIOR DA HOME -->
+<div class="container home-secoes">
+
+    <div class="row g-4 align-items-stretch">
+
+        <!-- COLUNA ESQUERDA -->
+        <div class="col-12 col-lg-6">
+
+            <section class="painel-equipamentos h-100" id="equipamentos">
+
+                <h2>equipamentos da residência</h2>
+
+                <div class="filtros-equipamentos">
+                    <span class="filtro ativo">cozinha</span>
+                    <span class="filtro">sala</span>
+                    <span class="filtro">quarto</span>
+                </div>
+
+                <ul class="lista-equipamentos">
+
+                    <li class="equipamento">
+                        <div class="equipamento-info">
+                            <strong>Geladeira</strong>
+                            <small>Energia</small>
+                        </div>
+
+                        <div class="equipamento-valor">
+                            <strong>35</strong>
+                            <small>kWh/mês</small>
+                        </div>
+                    </li>
+
+                    <li class="equipamento">
+                        <div class="equipamento-info">
+                            <strong>Torneira</strong>
+                            <small>Água</small>
+                        </div>
+
+                        <div class="equipamento-valor">
+                            <strong>420</strong>
+                            <small>L/mês</small>
+                        </div>
+                    </li>
+
+                    <li class="equipamento">
+                        <div class="equipamento-info">
+                            <strong>Lâmpada</strong>
+                            <small>Energia</small>
+                        </div>
+
+                        <div class="equipamento-valor">
+                            <strong>4</strong>
+                            <small>kWh/mês</small>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <p class="adicionar-equipamento">
+                    + adicionar novo equipamento (em breve)
+                </p>
+
+            </section>
+
+        </div>
+
+        <!-- COLUNA DIREITA -->
+        <div class="col-12 col-lg-6">
+
         <!-- PAINEL EXPLORAR -->
-        <section class="secao-explorar container">
+        <section class="secao-explorar h-100">
             <div class="painel-explorar">
 
                 <h2>explore</h2>
@@ -319,7 +388,11 @@
                 </div>
             </div>
         </section>
+        </div> <!-- fim da coluna direita -->
 
+    </div> <!-- fim da row -->
+
+</div> <!-- fim do container home-secoes -->
     </main>
             
 
@@ -361,8 +434,7 @@
 
     </footer>
 
-    <!--Comentario Comentado-->
-    <!--LULONARIO-->
+
     <!-- Bootstrap JS: necessário para o menu mobile -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">

@@ -433,16 +433,98 @@ body {
     }
 }
 
+
+/* ===== PAINÉIS INFERIORES DA HOME ===== */
+
+.home-secoes {
+    padding: 0 16px;
+    margin: 0 auto 35px;
+}
+
+/* Painel de equipamentos */
+
+.painel-equipamentos {
+    background-color: #ffffff;
+    border: 1px solid #e9ebe9;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.painel-equipamentos h2 {
+    color: #43b968;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+/* Filtros de cômodos */
+
+.filtros-equipamentos {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.filtro {
+    padding: 6px 15px;
+    border: 1px solid #e5e8e5;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #777;
+}
+
+.filtro.ativo {
+    background-color: #43b968;
+    color: white;
+    border-color: #43b968;
+}
+
+/* Lista dos equipamentos */
+
+.lista-equipamentos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.equipamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    border-bottom: 1px solid #e9ebe9;
+}
+
+.equipamento-info strong,
+.equipamento-valor strong {
+    display: block;
+    font-size: 14px;
+    color: #222;
+}
+
+.equipamento-info small,
+.equipamento-valor small {
+    display: block;
+    font-size: 11px;
+    color: #888;
+}
+
+.equipamento-valor {
+    text-align: right;
+}
+
+.adicionar-equipamento {
+    margin: 18px 0 0;
+    color: #777;
+    font-size: 12px;
+}
+
 /* ======== PAINEL EXPLORAR - ECO LAR ========== */
 
 .secao-explorar {
     width: 100%;
-    max-width: 600px;
-    margin: 35px auto 0;
-    padding: 0 16px;
-    display: flex;
-    justify-content: flex-end;
-    margin: 35px 0 0 auto; 
+    margin: 0;
+    padding: 0;
 }
 
 .painel-explorar {
