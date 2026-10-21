@@ -32,7 +32,7 @@ body {
     max-width: 1500px;
     min-height: 82px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 10px 0 0;
     display: flex;
     align-items: center;
 }
@@ -230,7 +230,7 @@ body {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 16px 16px 24px;
+    padding: 16px 3px 24px 16px;
 }
 
 .boas-vindas {
