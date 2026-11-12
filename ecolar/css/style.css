@@ -642,7 +642,7 @@ body {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    padding-bottom: 35px;
+    padding: 0 16px;
 }
 
 /* Equipe à esquerda */
@@ -719,6 +719,7 @@ body {
     color: #35ad60;
     font-size: 13px;
     font-style: italic;
+    padding-bottom: 9px;
 }
 
 /* Faixa inferior */
@@ -732,7 +733,7 @@ body {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 18px 0;
+    padding: 9px 16px;
 
     border-top: 1px solid #e1e8e1;
 }
