@@ -1,1 +1,194 @@
-<!-- EcoLar: página Orçamento e Hospedagem. Espaço reservado para comparação de hospedagem e domínios. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informações de orçamento, hospedagem e domínio do projeto EcoLar.">
+    <title>Orçamento e hospedagem | EcoLar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <a class="acessibilidade-pular" href="#conteudo-principal">Pular para o conteúdo principal</a>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-xxl" aria-label="Navegação principal">
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="index.html" aria-label="EcoLar - página inicial">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="logo-simbolo">
+                    <div class="logo-texto">
+                        <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="logo-nome">
+                        <span>consumo inteligente</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Abrir ou fechar menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="casa.html">minha casa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipamentos.html">equipamentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projetos.html">projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="impacto.html">consumo e impacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acessibilidade.html">acessibilidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="midia.html">mídia educativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">notícias e dicas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">contato</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="orcamento_hospedagem.html">hospedagem</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="orcamento-introducao container" aria-labelledby="titulo-orcamento">
+            <p class="projetos-etiqueta">planejamento de publicação</p>
+            <h1 id="titulo-orcamento">Orçamento, <span>hospedagem</span> e domínio</h1>
+            <p>
+                Comparação para um site estático acadêmico, com preços consultados em
+                24 de novembro de 2026. Valores podem mudar, variar por região, tributos,
+                uso e promoções; confirme as condições antes de contratar.
+            </p>
+        </section>
+
+        <section class="orcamento-secao container" aria-labelledby="titulo-hospedagens">
+            <h2 id="titulo-hospedagens">Alternativas de hospedagem</h2>
+            <div class="orcamento-tabela-scroll">
+                <table class="orcamento-tabela">
+                    <caption>Comparação de plataformas para publicar um site estático</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Plataforma</th>
+                            <th scope="col">Plano de entrada consultado</th>
+                            <th scope="col">Adequação ao EcoLar</th>
+                            <th scope="col">Pontos de atenção</th>
+                            <th scope="col">Fonte oficial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Railway</th>
+                            <td>Free: US$ 0/mês e US$ 1 em crédito mensal. Hobby: US$ 5/mês, incluindo US$ 5 de uso.</td>
+                            <td>É a plataforma indicada pela atividade e a publicação foi informada pela equipe.</td>
+                            <td>O valor efetivo depende do uso; no plano gratuito os serviços podem suspender após inatividade. O plano usado e o domínio público não foram registrados neste checkout.</td>
+                            <td><a href="https://railway.com/pricing" target="_blank" rel="noopener noreferrer">Preços Railway</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Vercel</th>
+                            <td>Hobby: US$ 0/mês para uso pessoal e não comercial; Pro: US$ 20/mês.</td>
+                            <td>Hospeda páginas estáticas e inclui HTTPS, adequado para demonstração e portfólio pessoal.</td>
+                            <td>O plano gratuito tem condições de uso específicas; verificar termos e limites de tráfego antes de um uso comercial.</td>
+                            <td><a href="https://vercel.com/pricing" target="_blank" rel="noopener noreferrer">Preços Vercel</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cloudflare Pages</th>
+                            <td>Plano Free: US$ 0 para começar; limites e recursos dependem da plataforma Pages/Workers.</td>
+                            <td>Alternativa de baixo custo para publicar HTML, CSS, JavaScript e imagens estáticas.</td>
+                            <td>Conferir limites de build, arquivos, funções e políticas vigentes; não presumir que recursos de servidor estejam incluídos.</td>
+                            <td><a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noopener noreferrer">Limites oficiais do Pages</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="orcamento-nota">
+                <strong>Escolha para a atividade:</strong> manter Railway atende ao requisito de publicação
+                indicado pela disciplina, conforme informação da equipe. Para este site estático, a
+                comparação de custo não comprova que Railway seja a opção mais barata. A conta e o plano
+                reais só podem ser confirmados no painel privado do projeto.
+            </p>
+        </section>
+
+        <section class="orcamento-secao container" aria-labelledby="titulo-dominios">
+            <h2 id="titulo-dominios">Três opções de domínio</h2>
+            <div class="orcamento-tabela-scroll">
+                <table class="orcamento-tabela">
+                    <caption>Exemplos de nomes e extensões; disponibilidade não verificada</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome candidato</th>
+                            <th scope="col">Registrador consultado</th>
+                            <th scope="col">Preço encontrado</th>
+                            <th scope="col">Observação</th>
+                            <th scope="col">Fonte</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">ecolar.com.br</th>
+                            <td>Registro.br</td>
+                            <td>R$ 40,00 por ano</td>
+                            <td>Preço divulgado para domínios .br; verificar disponibilidade e requisitos de cadastro.</td>
+                            <td><a href="https://registro.br/" target="_blank" rel="noopener noreferrer">Registro.br</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ecolar.com</th>
+                            <td>Porkbun</td>
+                            <td>US$ 11,81 no registro e US$ 11,81 na renovação anual</td>
+                            <td>Preço regular mostrado na tabela consultada; o valor pode mudar antes da compra.</td>
+                            <td><a href="https://porkbun.com/products/domains" target="_blank" rel="noopener noreferrer">Preços por extensão</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ecolar.org</th>
+                            <td>Porkbun</td>
+                            <td>US$ 7,98 no primeiro ano em promoção; US$ 11,84 na renovação</td>
+                            <td>Não comparar apenas a promoção inicial: avaliar o preço de renovação e a moeda.</td>
+                            <td><a href="https://porkbun.com/products/domains" target="_blank" rel="noopener noreferrer">Preços por extensão</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="orcamento-nota">
+                Os nomes são sugestões, não uma afirmação de que estejam livres. Domínio próprio é
+                opcional para a demonstração: o Railway pode fornecer um endereço de projeto. O endereço
+                HTTPS da publicação não foi informado no repositório, portanto deve ser conferido no
+                painel Railway antes da apresentação e incluído no README da entrega.
+            </p>
+        </section>
+
+        <section class="orcamento-secao orcamento-criterios">
+            <div class="container">
+                <h2>Critérios de decisão</h2>
+                <ul>
+                    <li>Preferir o menor custo total previsível para uma página estática.</li>
+                    <li>Confirmar HTTPS, domínio personalizado, limites e política de uso gratuito.</li>
+                    <li>Conferir renovação, moeda, impostos e preço após promoções.</li>
+                    <li>Não publicar informações pessoais da equipe ou credenciais de acesso.</li>
+                </ul>
+                <p class="orcamento-fontes-data">Consulta de preços: 24/11/2026. Fontes oficiais ligadas em cada tabela.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-equipe">
+                <a href="index.html" class="rodape-marca">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="rodape-logo">
+                    <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="rodape-logo-texto">
+                    <span class="rodape-span">consumo inteligente</span>
+                </a>
+                <p class="rodape-subtitulo">Desenvolvido pela equipe</p>
+                <ul class="lista-integrantes">
+                    <li>Abner</li><li>Kaique</li><li>Murilo</li><li>Samuel</li>
+                </ul>
+                <p class="rodape-mensagem">Pequenas atitudes, grandes mudanças.</p>
+            </div>
+        </div>
+        <div class="rodape-final">
+            <p>&copy; 2026 EcoLar. Consumo inteligente.</p>
+            <p>Projeto acadêmico de Desenvolvimento Web</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

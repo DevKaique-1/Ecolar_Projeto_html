@@ -1,1 +1,309 @@
-<!-- EcoLar: página Mídia Educativa. Espaço reservado para materiais audiovisuais sobre consumo consciente. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Vídeos e materiais educativos do EcoLar sobre economia de água, eficiência energética e consumo consciente.">
+    <title>Mídia educativa | EcoLar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <a class="acessibilidade-pular" href="#conteudo-principal">Pular para o conteúdo principal</a>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-xxl" aria-label="Navegação principal">
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="index.html" aria-label="EcoLar - página inicial">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="logo-simbolo">
+                    <div class="logo-texto">
+                        <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="logo-nome">
+                        <span>consumo inteligente</span>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Abrir ou fechar menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="casa.html">minha casa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipamentos.html">equipamentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projetos.html">projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="impacto.html">consumo e impacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acessibilidade.html">acessibilidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">galeria</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="midia.html">mídia educativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">notícias e dicas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="orcamento_hospedagem.html">hospedagem</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="midia-introducao container" aria-labelledby="titulo-midia">
+            <div>
+                <p>aprender também transforma</p>
+                <h1 id="titulo-midia">Mídia <span>educativa</span></h1>
+                <p>
+                    Vídeos e materiais visuais para entender melhor o uso da água, a eficiência
+                    energética e as escolhas sustentáveis dentro de casa.
+                </p>
+            </div>
+            <a href="#videos-midia" class="midia-ir-videos">
+                Explorar vídeos
+                <i class="bi bi-arrow-down" aria-hidden="true"></i>
+            </a>
+        </section>
+
+        <section class="midia-videos container" id="videos-midia" aria-labelledby="titulo-videos-midia">
+            <div class="midia-titulo-secao">
+                <p>conteúdo audiovisual</p>
+                <h2 id="titulo-videos-midia">Assista e descubra</h2>
+                <span>Materiais originais do EcoLar e conteúdos de instituições educativas.</span>
+            </div>
+
+            <div class="midia-videos-grid">
+                <article class="midia-video-card">
+                    <div class="midia-video-frame">
+                        <video controls preload="metadata" poster="img/midia-poster.png"
+                               aria-label="Vídeo educativo original sobre hábitos de economia de água e energia">
+                            <source src="media/ecolar-consumo-consciente.mp4" type="video/mp4">
+                            <track kind="captions" src="media/ecolar-consumo-consciente.vtt"
+                                   srclang="pt-BR" label="Português" default>
+                            Seu navegador não oferece reprodução de vídeo. Consulte o roteiro textual logo abaixo.
+                        </video>
+                    </div>
+                    <div class="midia-video-conteudo">
+                        <span class="midia-etiqueta etiqueta-energia">
+                            <i class="bi bi-play-circle-fill" aria-hidden="true"></i>
+                            produção EcoLar
+                        </span>
+                        <h3>Três hábitos para consumir melhor</h3>
+                        <p>Vídeo autoral com dicas simples para economizar água e energia em casa.</p>
+                        <details class="midia-transcricao">
+                            <summary>Ler roteiro do vídeo</summary>
+                            <p>Feche a torneira ao escovar os dentes. Prefira lâmpadas LED e apague as luzes ao sair. Use a máquina de lavar com carga completa. Pequenas escolhas cotidianas ajudam a evitar desperdícios; acompanhe sua conta para conhecer seu próprio consumo.</p>
+                        </details>
+                    </div>
+                </article>
+                <article class="midia-video-card">
+                    <div class="midia-video-frame">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/WWHRc-eBofo"
+                            title="Sabesp: Economize Água"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="midia-video-conteudo">
+                        <span class="midia-etiqueta etiqueta-agua">
+                            <i class="bi bi-droplet-fill" aria-hidden="true"></i>
+                            água
+                        </span>
+                        <h3>Economize água no dia a dia</h3>
+                        <p>Orientações da Sabesp para reconhecer hábitos que ajudam a evitar desperdício de água.</p>
+                        <a href="https://www.youtube.com/watch?v=WWHRc-eBofo"
+                           target="_blank" rel="noopener noreferrer">
+                            Assistir diretamente no YouTube
+                            <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="midia-video-card">
+                    <div class="midia-video-frame">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/nPN4NodtZww"
+                            title="Sabesp: Banho em 1 hit"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="midia-video-conteudo">
+                        <span class="midia-etiqueta etiqueta-agua">
+                            <i class="bi bi-droplet-fill" aria-hidden="true"></i>
+                            água
+                        </span>
+                        <h3>Banho consciente</h3>
+                        <p>Uma campanha da Sabesp que convida a refletir sobre a duração do banho e o consumo de água.</p>
+                        <a href="https://www.youtube.com/watch?v=nPN4NodtZww"
+                           target="_blank" rel="noopener noreferrer">
+                            Assistir diretamente no YouTube
+                            <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="midia-video-card">
+                    <div class="midia-video-frame">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/0NY7ZVb3lms"
+                            title="IEI Brasil: como comparar produtos mais eficientes usando a Etiqueta Nacional de Conservação de Energia"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="midia-video-conteudo">
+                        <span class="midia-etiqueta etiqueta-energia">
+                            <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+                            energia
+                        </span>
+                        <h3>Escolha equipamentos eficientes</h3>
+                        <p>O IEI Brasil explica como comparar produtos usando a Etiqueta Nacional de Conservação de Energia.</p>
+                        <a href="https://www.youtube.com/watch?v=0NY7ZVb3lms"
+                           target="_blank" rel="noopener noreferrer">
+                            Assistir diretamente no YouTube
+                            <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <p class="midia-aviso">
+                <i class="bi bi-shield-lock" aria-hidden="true"></i>
+                Os vídeos são hospedados pelo YouTube. Se o player não carregar, use o link para assistir no YouTube.
+            </p>
+        </section>
+
+        <section class="midia-audio container" aria-labelledby="titulo-audio">
+            <div class="midia-titulo-secao">
+                <p>ouça e acompanhe a transcrição</p>
+                <h2 id="titulo-audio">Orientação em áudio</h2>
+            </div>
+            <audio controls preload="metadata">
+                <source src="media/orientacao-consumo.mp3" type="audio/mpeg">
+                Seu navegador não oferece reprodução de áudio.
+            </audio>
+            <details class="midia-transcricao">
+                <summary>Ler transcrição do áudio</summary>
+                <p>Água e energia são recursos preciosos. Feche a torneira ao escovar os dentes e desligue os aparelhos que não estiver usando. Para lavar roupas, prefira cargas completas. Compare suas contas e observe como os hábitos influenciam o consumo. As estimativas do EcoLar são educativas e não substituem a leitura do medidor.</p>
+            </details>
+            <p class="midia-creditos">Locução sintética produzida para o EcoLar; roteiro e vídeo de autoria da equipe.</p>
+        </section>
+
+        <section class="midia-infografico" aria-labelledby="titulo-infografico">
+            <div class="container">
+                <div class="midia-titulo-secao">
+                    <p>resumo visual</p>
+                    <h2 id="titulo-infografico">Uma casa, duas formas de economizar</h2>
+                    <span>Pequenos hábitos podem fazer diferença no uso diário dos recursos.</span>
+                </div>
+
+                <div class="midia-infografico-grade">
+                    <article class="midia-infografico-card midia-infografico-agua">
+                        <div class="midia-infografico-cabecalho">
+                            <i class="bi bi-droplet-fill" aria-hidden="true"></i>
+                            <h3>Água</h3>
+                        </div>
+                        <ol>
+                            <li><span>1</span><div><strong>Observe</strong><small>Repare em torneiras abertas e possíveis vazamentos.</small></div></li>
+                            <li><span>2</span><div><strong>Reduza</strong><small>Feche a torneira ao escovar os dentes ou ensaboar.</small></div></li>
+                            <li><span>3</span><div><strong>Reaproveite</strong><small>Quando seguro e adequado, reutilize água em tarefas domésticas.</small></div></li>
+                        </ol>
+                        <p>Consumo consciente começa com atenção ao uso cotidiano.</p>
+                    </article>
+
+                    <article class="midia-infografico-card midia-infografico-energia">
+                        <div class="midia-infografico-cabecalho">
+                            <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+                            <h3>Energia</h3>
+                        </div>
+                        <ol>
+                            <li><span>1</span><div><strong>Conheça</strong><small>Confira a etiqueta e a potência dos aparelhos.</small></div></li>
+                            <li><span>2</span><div><strong>Use melhor</strong><small>Desligue luzes e equipamentos fora de uso.</small></div></li>
+                            <li><span>3</span><div><strong>Acompanhe</strong><small>Compare hábitos com o consumo indicado na conta.</small></div></li>
+                        </ol>
+                        <p>Eficiência combina equipamento adequado e bons hábitos.</p>
+                    </article>
+                </div>
+                <p class="midia-infografico-legenda">
+                    Este resumo é um material educativo, não uma medição ou recomendação técnica individual.
+                </p>
+            </div>
+        </section>
+
+        <section class="midia-materiais container" aria-labelledby="titulo-materiais">
+            <div class="midia-titulo-secao">
+                <p>continue explorando</p>
+                <h2 id="titulo-materiais">Materiais e referências</h2>
+            </div>
+            <div class="midia-materiais-grade">
+                <a href="https://www.sabesp.com.br/" target="_blank" rel="noopener noreferrer">
+                    <span><i class="bi bi-droplet-half" aria-hidden="true"></i></span>
+                    <div>
+                        <strong>Sabesp</strong>
+                        <small>Informações e orientações sobre uso responsável da água.</small>
+                    </div>
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </a>
+                <a href="https://ieibrasil.org.br/" target="_blank" rel="noopener noreferrer">
+                    <span><i class="bi bi-lightning-charge" aria-hidden="true"></i></span>
+                    <div>
+                        <strong>IEI Brasil</strong>
+                        <small>Conteúdos sobre eficiência energética e transição energética.</small>
+                    </div>
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem"
+                   target="_blank" rel="noopener noreferrer">
+                    <span><i class="bi bi-patch-check" aria-hidden="true"></i></span>
+                    <div>
+                        <strong>Programa Brasileiro de Etiquetagem</strong>
+                        <small>Consulte informações oficiais sobre a etiquetagem de produtos.</small>
+                    </div>
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p class="midia-creditos">
+                Créditos dos vídeos: Sabesp e IEI Brasil. Os conteúdos externos pertencem aos respectivos autores.
+            </p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-equipe">
+                <a href="index.html" class="rodape-marca">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="rodape-logo">
+                    <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="rodape-logo-texto">
+                    <span class="rodape-span">consumo inteligente</span>
+                </a>
+                <p class="rodape-subtitulo">Desenvolvido pela equipe</p>
+                <ul class="lista-integrantes">
+                    <li>Abner</li>
+                    <li>Kaique</li>
+                    <li>Murilo</li>
+                    <li>Samuel</li>
+                </ul>
+                <p class="rodape-mensagem">Pequenas atitudes, grandes mudanças.</p>
+            </div>
+        </div>
+        <div class="rodape-final">
+            <p>&copy; 2026 EcoLar. Consumo inteligente.</p>
+            <p>Projeto acadêmico de Desenvolvimento Web</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de protótipos da casa interativa EcoLar, com descrições e créditos das imagens.">
+    <title>Galeria | EcoLar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <a class="acessibilidade-pular" href="#conteudo-principal">Pular para o conteúdo principal</a>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-xxl" aria-label="Navegação principal">
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="index.html" aria-label="EcoLar - página inicial">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="logo-simbolo">
+                    <div class="logo-texto">
+                        <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="logo-nome">
+                        <span>consumo inteligente</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Abrir ou fechar menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="casa.html">minha casa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipamentos.html">equipamentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projetos.html">projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="impacto.html">consumo e impacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acessibilidade.html">acessibilidade</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="galeria.html">galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="midia.html">mídia educativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">notícias e dicas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="orcamento_hospedagem.html">hospedagem</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="galeria-introducao container" aria-labelledby="titulo-galeria">
+            <p class="projetos-etiqueta">ideias e protótipos</p>
+            <h1 id="titulo-galeria">Galeria da <span>casa interativa</span></h1>
+            <p>Imagens de referência da equipe que documentam a proposta visual original do EcoLar.</p>
+        </section>
+        <section class="galeria-grade container" aria-label="Imagens dos protótipos do EcoLar">
+            <figure class="galeria-item">
+                <a href="img/tela_minha_casa.png">
+                    <img src="img/tela_minha_casa.png" alt="Protótipo da tela Minha Casa: ilustração verde de uma casa com botão de adição no telhado e cartões para Quarto, Cozinha e Sala.">
+                </a>
+                <figcaption>
+                    <strong>Protótipo da casa interativa</strong>
+                    <span>Conceito inicial para selecionar cômodos e iniciar uma adição pelo botão no telhado.</span>
+                    <small>Crédito: protótipo visual fornecido pela equipe EcoLar (arquivo tela_minha_casa.png).</small>
+                </figcaption>
+            </figure>
+            <figure class="galeria-item">
+                <a href="img/pop-up_minha_casa.png">
+                    <img src="img/pop-up_minha_casa.png" alt="Protótipo de uma janela sobre a casa com lista de cômodos selecionáveis e opções para personalizar a residência.">
+                </a>
+                <figcaption>
+                    <strong>Protótipo do painel de personalização</strong>
+                    <span>Referência visual para adicionar ou selecionar os cômodos da residência.</span>
+                    <small>Crédito: protótipo visual fornecido pela equipe EcoLar (arquivo pop-up_minha_casa.png).</small>
+                </figcaption>
+            </figure>
+        </section>
+        <p class="galeria-nota container">
+            Estas imagens mostram protótipos de interface e não representam medições de consumo nem fotografias de residências reais.
+            <a href="casa.html">Experimente a versão interativa implementada.</a>
+        </p>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-equipe">
+                <a href="index.html" class="rodape-marca">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="rodape-logo">
+                    <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="rodape-logo-texto">
+                    <span class="rodape-span">consumo inteligente</span>
+                </a>
+                <p class="rodape-subtitulo">Desenvolvido pela equipe</p>
+                <ul class="lista-integrantes">
+                    <li>Abner</li><li>Kaique</li><li>Murilo</li><li>Samuel</li>
+                </ul>
+                <p class="rodape-mensagem">Pequenas atitudes, grandes mudanças.</p>
+            </div>
+        </div>
+        <div class="rodape-final">
+            <p>&copy; 2026 EcoLar. Consumo inteligente.</p>
+            <p>Projeto acadêmico de Desenvolvimento Web</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

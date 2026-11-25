@@ -1,1 +1,313 @@
-<!-- EcoLar: página Consumo e Impacto. Espaço reservado para estimativas, comparações e gráficos. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Analise consumo simulado de água e energia, custos estimados e oportunidades de economia no EcoLar.">
+    <title>Consumo e impacto | EcoLar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <a class="acessibilidade-pular" href="#conteudo-principal">Pular para o conteúdo principal</a>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-xxl" aria-label="Navegação principal">
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="index.html" aria-label="EcoLar - página inicial">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="logo-simbolo">
+                    <div class="logo-texto">
+                        <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="logo-nome">
+                        <span>consumo inteligente</span>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Abrir ou fechar menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="casa.html">minha casa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipamentos.html">equipamentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projetos.html">projetos</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="impacto.html">consumo e impacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acessibilidade.html">acessibilidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="midia.html">mídia educativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">notícias e dicas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="orcamento_hospedagem.html">hospedagem</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="impacto-introducao container" aria-labelledby="titulo-impacto">
+            <div>
+                <p>residência 1 · visão geral</p>
+                <h1 id="titulo-impacto">Consumo e <span>impacto</span></h1>
+                <p>
+                    Entenda as estimativas de água, energia e gastos da residência simulada,
+                    compare categorias e encontre oportunidades para economizar.
+                </p>
+            </div>
+        </section>
+
+        <section class="impacto-indicadores container" aria-label="Indicadores estimados do mês">
+            <article class="impacto-indicador impacto-indicador-agua">
+                <div class="impacto-indicador-icone"><i class="bi bi-droplet-fill" aria-hidden="true"></i></div>
+                <p>Água estimada</p>
+                <h2><span id="agua-mensal">8.450</span> <small>L/mês</small></h2>
+                <span id="agua-diaria">281,7 L/dia</span>
+            </article>
+            <article class="impacto-indicador impacto-indicador-energia">
+                <div class="impacto-indicador-icone"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></div>
+                <p>Energia estimada</p>
+                <h2><span id="energia-mensal">186</span> <small>kWh/mês</small></h2>
+                <span id="energia-diaria">6,2 kWh/dia</span>
+            </article>
+            <article class="impacto-indicador impacto-indicador-custo">
+                <div class="impacto-indicador-icone"><i class="bi bi-wallet2" aria-hidden="true"></i></div>
+                <p>Gasto estimado</p>
+                <h2 id="custo-total">R$ 164,85</h2>
+                <span>água + energia por mês</span>
+            </article>
+        </section>
+
+        <section class="impacto-comparacoes container" aria-labelledby="titulo-comparacoes">
+            <div class="impacto-titulo-secao">
+                <p>para onde vão os recursos</p>
+                <h2 id="titulo-comparacoes">Consumo por categoria</h2>
+            </div>
+
+            <div class="impacto-graficos">
+                <article class="impacto-grafico" aria-labelledby="titulo-grafico-agua">
+                    <div class="impacto-grafico-cabecalho">
+                        <span class="impacto-grafico-icone cor-agua"><i class="bi bi-droplet-fill" aria-hidden="true"></i></span>
+                        <div>
+                            <h3 id="titulo-grafico-agua">Água</h3>
+                            <p>litros estimados por mês</p>
+                        </div>
+                    </div>
+                    <div class="impacto-barras" role="img" aria-label="Comparação de consumo mensal estimado de água por categoria">
+                        <div class="impacto-barra-linha">
+                            <span>Banheiro</span><div class="impacto-barra-fundo"><span class="impacto-barra barra-azul" style="width: 100%"></span></div><strong>4.200 L</strong>
+                        </div>
+                        <div class="impacto-barra-linha">
+                            <span>Cozinha</span><div class="impacto-barra-fundo"><span class="impacto-barra barra-azul" style="width: 67%"></span></div><strong>2.800 L</strong>
+                        </div>
+                        <div class="impacto-barra-linha">
+                            <span>Lavanderia</span><div class="impacto-barra-fundo"><span class="impacto-barra barra-azul" style="width: 35%"></span></div><strong>1.450 L</strong>
+                        </div>
+                    </div>
+                    <p class="impacto-grafico-resumo">O banheiro representa cerca de metade do consumo de água simulado.</p>
+                </article>
+
+                <article class="impacto-grafico" aria-labelledby="titulo-grafico-energia">
+                    <div class="impacto-grafico-cabecalho">
+                        <span class="impacto-grafico-icone cor-energia"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></span>
+                        <div>
+                            <h3 id="titulo-grafico-energia">Energia</h3>
+                            <p>kWh estimados por mês</p>
+                        </div>
+                    </div>
+                    <div class="impacto-barras" role="img" aria-label="Comparação de consumo mensal estimado de energia por equipamento">
+                        <div class="impacto-barra-linha">
+                            <span>Chuveiro</span><div class="impacto-barra-fundo"><span class="impacto-barra barra-verde" style="width: 100%"></span></div><strong>70 kWh</strong>
+                        </div>
+                        <div class="impacto-barra-linha">
+                            <span>Geladeira</span><div class="impacto-barra-fundo"><span class="impacto-barra barra-verde" style="width: 64%"></span></div><strong>45 kWh</strong>
+                        </div>
+                        <div class="impacto-barra-linha">
+                            <span>Lavadora</span><div class="impacto-barra-fundo"><span class="impacto-barra barra-verde" style="width: 51%"></span></div><strong>36 kWh</strong>
+                        </div>
+                        <div class="impacto-barra-linha">
+                            <span>Outros</span><div class="impacto-barra-fundo"><span class="impacto-barra barra-verde" style="width: 50%"></span></div><strong>35 kWh</strong>
+                        </div>
+                    </div>
+                    <p class="impacto-grafico-resumo">O chuveiro é o maior consumo individual de energia nesta simulação.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="impacto-tabela-secao container" aria-labelledby="titulo-tabela">
+            <div class="impacto-titulo-secao">
+                <p>detalhamento</p>
+                <h2 id="titulo-tabela">Comparação de equipamentos</h2>
+            </div>
+            <div class="impacto-tabela-scroll">
+                <table class="impacto-tabela">
+                    <caption>Estimativas mensais ilustrativas por equipamento</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Equipamento</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Água</th>
+                            <th scope="col">Energia</th>
+                            <th scope="col">Oportunidade de economia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Chuveiro elétrico</th>
+                            <td>Banheiro</td>
+                            <td>4.200 L</td>
+                            <td>70 kWh</td>
+                            <td>Reduzir o tempo de banho.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Geladeira</th>
+                            <td>Cozinha</td>
+                            <td>—</td>
+                            <td>45 kWh</td>
+                            <td>Evitar abertura frequente.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Máquina de lavar</th>
+                            <td>Lavanderia</td>
+                            <td>1.450 L</td>
+                            <td>36 kWh</td>
+                            <td>Usar cargas completas.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Torneiras e outros usos</th>
+                            <td>Cozinha e banheiro</td>
+                            <td>2.800 L</td>
+                            <td>—</td>
+                            <td>Fechar ao ensaboar e corrigir vazamentos.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="impacto-tarifas container" aria-labelledby="titulo-tarifas">
+            <div class="impacto-tarifas-texto">
+                <p>simule os custos</p>
+                <h2 id="titulo-tarifas">Ajuste as tarifas de referência</h2>
+                <p>
+                    Informe valores aproximados para visualizar como as tarifas alteram o gasto mensal.
+                    Os valores iniciais são apenas exemplos e não representam uma concessionária específica.
+                </p>
+            </div>
+            <form class="impacto-tarifas-form" id="formulario-tarifas">
+                <div>
+                    <label for="tarifa-energia">Energia (R$/kWh)</label>
+                    <input id="tarifa-energia" type="number" min="0" max="100" step="0.01" value="0.75">
+                </div>
+                <div>
+                    <label for="tarifa-agua">Água (R$/m³)</label>
+                    <input id="tarifa-agua" type="number" min="0" max="1000" step="0.01" value="3.00">
+                </div>
+                <p id="resumo-custos" aria-live="polite">
+                    Energia: R$ 139,50 · Água: R$ 25,35
+                </p>
+                <button type="submit">Recalcular estimativa</button>
+            </form>
+        </section>
+
+        <section class="impacto-parametros container" aria-labelledby="titulo-parametros">
+            <div class="impacto-parametros-icone"><i class="bi bi-info-circle-fill" aria-hidden="true"></i></div>
+            <div>
+                <h2 id="titulo-parametros">Como interpretar estes dados</h2>
+                <p>
+                    Esta página usa como exemplo 8.450 litros de água e 186 kWh de energia por mês,
+                    apresentados também na Home. A estimativa diária divide o total mensal por 30 dias.
+                    As categorias e os equipamentos são distribuições aproximadas para fins educativos.
+                </p>
+                <p>
+                    O custo é calculado multiplicando o consumo pela tarifa informada: kWh × R$/kWh
+                    e m³ × R$/m³ (1 m³ = 1.000 litros). A conta real pode incluir faixas de consumo,
+                    impostos, bandeiras tarifárias, tarifas mínimas e outros encargos.
+                </p>
+                <p class="impacto-limitacao">
+                    O EcoLar não mede consumo real nem recebe dados de medidores. Todos os resultados
+                    são simulações ilustrativas e não substituem a fatura ou as informações da concessionária.
+                </p>
+            </div>
+        </section>
+
+        <section class="impacto-fontes container" aria-labelledby="titulo-fontes-impacto">
+            <h2 id="titulo-fontes-impacto">Fontes para consulta</h2>
+            <p>
+                Os números exibidos são exemplos definidos para demonstrar a interface e a fórmula,
+                não estatísticas observadas nem medições da equipe. Para tarifas e consumo reais,
+                consulte sua concessionária e os órgãos oficiais:
+            </p>
+            <ul>
+                <li><a href="https://www.gov.br/aneel/pt-br/assuntos/tarifas" target="_blank" rel="noopener noreferrer">ANEEL — informações sobre tarifas de energia</a></li>
+                <li><a href="https://www.sabesp.com.br/" target="_blank" rel="noopener noreferrer">Sabesp — orientações de uso da água</a></li>
+                <li><a href="https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem" target="_blank" rel="noopener noreferrer">Inmetro — etiquetagem de eficiência</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-equipe">
+                <a href="index.html" class="rodape-marca">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="rodape-logo">
+                    <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="rodape-logo-texto">
+                    <span class="rodape-span">consumo inteligente</span>
+                </a>
+                <p class="rodape-subtitulo">Desenvolvido pela equipe</p>
+                <ul class="lista-integrantes">
+                    <li>Abner</li>
+                    <li>Kaique</li>
+                    <li>Murilo</li>
+                    <li>Samuel</li>
+                </ul>
+                <p class="rodape-mensagem">Pequenas atitudes, grandes mudanças.</p>
+            </div>
+        </div>
+        <div class="rodape-final">
+            <p>&copy; 2026 EcoLar. Consumo inteligente.</p>
+            <p>Projeto acadêmico de Desenvolvimento Web</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const consumoAgua = 8450;
+        const consumoEnergia = 186;
+        const formularioTarifas = document.getElementById("formulario-tarifas");
+
+        function formatarReais(valor) {
+            return valor.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL"
+            });
+        }
+
+        function atualizarCustos() {
+            const valorEnergia = Number(document.getElementById("tarifa-energia").value);
+            const valorAgua = Number(document.getElementById("tarifa-agua").value);
+            const custoEnergia = consumoEnergia * valorEnergia;
+            const custoAgua = (consumoAgua / 1000) * valorAgua;
+
+            document.getElementById("custo-total").textContent =
+                formatarReais(custoEnergia + custoAgua);
+            document.getElementById("resumo-custos").textContent =
+                `Energia: ${formatarReais(custoEnergia)} · Água: ${formatarReais(custoAgua)}`;
+        }
+
+        formularioTarifas.addEventListener("submit", (evento) => {
+            evento.preventDefault();
+            if (formularioTarifas.reportValidity()) atualizarCustos();
+        });
+    </script>
+</body>
+</html>

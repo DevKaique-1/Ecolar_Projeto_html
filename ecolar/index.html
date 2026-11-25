@@ -25,9 +25,11 @@
 
 <body>
 
+    <a class="acessibilidade-pular" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
     <header class="site-header">
         <!--Barra de Navegação-->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-xxl" aria-label="Navegação principal">
             <div class="container navbar-container">
 
                 <!-- Logo EcoLar -->
@@ -70,39 +72,18 @@
                      id="menuPrincipal">
 
                     <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link active"
-                               aria-current="page"
-                               href="index.html">
-                                início
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="casa.html">
-                                minha casa
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="equipamentos.html">
-                                equipamentos
-                            </a>
-                        </li>
-
-                        <!-- Perfil da residência -->
-                        <li class="nav-item perfil-item">
-                            <a class="nav-link perfil-residencia"
-                               href="casa.html">
-
-                                <span class="avatar-residencia">R</span>
-
-                                <span>Residência 1</span>
-
-                            </a>
-                        </li>
-
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="casa.html">minha casa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipamentos.html">equipamentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projetos.html">projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="impacto.html">consumo e impacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acessibilidade.html">acessibilidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="midia.html">mídia educativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">notícias e dicas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="orcamento_hospedagem.html">hospedagem</a></li>
                     </ul>
 
                 </div>
@@ -112,14 +93,15 @@
 
     </header>
 
-    <main id="inicio">
+    <main id="conteudo-principal">
         <!-- RESUMO DO CONSUMO DA RESIDÊNCIA -->
         <section class="dashboard container">
 
             <!-- Título da seção -->
             <div class="boas-vindas">
                 <h1>Olá, veja seu consumo mensal!</h1>
-                <p>Você consumiu 30% a mais do que o último mês.</p>
+                <p>Exemplo simulado: 30% acima do período anterior.</p>
+                <p class="dashboard-aviso">Dados ilustrativos para fins educativos; não são leituras reais da residência.</p>
             </div>
 
             <!-- Grade dos indicadores -->
@@ -167,7 +149,7 @@
 
                             <div class="card-cabecalho">
                                 <span class="card-titulo">Consumo de<br>energia</span>
-                                <span class="card-icone icone-energia"aria-hidden="true">
+                                <span class="card-icone icone-energia" aria-hidden="true">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
                                         <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641z"/>
                                     </svg>
@@ -209,7 +191,7 @@
                             </div>
 
                             <div class="card-valor">
-                                R$ 164<span>,80</span>
+                                R$ 164<span>,85</span>
                             </div>
 
                             <p class="card-descricao">gastos de água e energia</p>
@@ -237,7 +219,7 @@
                                 <span class="card-titulo">
                                     Equipamentos<br>monitorados
                                 </span>
-                                <span class="card-icone icone-equipamentos"aria-hidden="true">
+                                <span class="card-icone icone-equipamentos" aria-hidden="true">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
                                         <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
                                     </svg>
@@ -266,7 +248,7 @@
 
             </div>
         </section>
-        
+
         <!-- PARTE INFERIOR DA HOME -->
         <div class="container home-secoes">
 
@@ -367,6 +349,11 @@
                                 <span>dicas de<br>economia</span>
                             </a>
 
+                            <a href="midia.html" class="botao-explorar">
+                                <i class="bi bi-play-btn-fill" aria-hidden="true"></i>
+                                <span>mídia<br>educativa</span>
+                            </a>
+
                             <a href="impacto.html" class="botao-explorar">
                                 <i class="bi bi-graph-up-arrow" aria-hidden="true"></i>
                                 <span>ver<br>relatórios</span>
@@ -391,7 +378,7 @@
 
         </div> <!-- fim do container home-secoes -->
     </main>
-            
+
 
     <!-- RODAPÉ -->
     <footer class="rodape">
@@ -440,6 +427,6 @@
 
     <script src="js/script.js"></script>
 
-    
+
 </body>
 </html>

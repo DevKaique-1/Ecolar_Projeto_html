@@ -1,1 +1,299 @@
-<!-- EcoLar: página Acessibilidade. Espaço reservado para recursos e orientações de acessibilidade. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Conheça as práticas de acessibilidade digital do EcoLar e veja orientações para navegar pelo site com mais autonomia.">
+    <title>Acessibilidade | EcoLar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <a class="acessibilidade-pular" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-xxl" aria-label="Navegação principal">
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="index.html" aria-label="EcoLar - página inicial">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="logo-simbolo">
+                    <div class="logo-texto">
+                        <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="logo-nome">
+                        <span>consumo inteligente</span>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Abrir ou fechar menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="casa.html">minha casa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipamentos.html">equipamentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projetos.html">projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="impacto.html">consumo e impacto</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="acessibilidade.html">acessibilidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="midia.html">mídia educativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">notícias e dicas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="orcamento_hospedagem.html">hospedagem</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal" class="acessibilidade-conteudo">
+        <section class="acessibilidade-introducao container" aria-labelledby="titulo-acessibilidade">
+            <div>
+                <p>acesso para todas as pessoas</p>
+                <h1 id="titulo-acessibilidade">Acessibilidade <span>digital</span></h1>
+                <p>
+                    Acessibilidade ajuda pessoas com diferentes habilidades e formas de interação
+                    a navegar, entender e utilizar um site com autonomia.
+                </p>
+            </div>
+        </section>
+
+        <section class="acessibilidade-controles container" aria-labelledby="titulo-controles">
+            <div class="acessibilidade-controles-texto">
+                <p>experimente nesta página</p>
+                <h2 id="titulo-controles">Ajustes de leitura</h2>
+                <span>Estes controles alteram apenas a visualização desta página e não são salvos.</span>
+            </div>
+            <div class="acessibilidade-botoes" role="group" aria-label="Controles de visualização">
+                <button type="button" id="diminuir-texto" aria-label="Diminuir tamanho do texto">
+                    <i class="bi bi-dash-lg" aria-hidden="true"></i>
+                    <span>Texto menor</span>
+                </button>
+                <button type="button" id="aumentar-texto" aria-label="Aumentar tamanho do texto">
+                    <i class="bi bi-plus-lg" aria-hidden="true"></i>
+                    <span>Texto maior</span>
+                </button>
+                <button type="button" id="alternar-contraste" aria-pressed="false">
+                    <i class="bi bi-circle-half" aria-hidden="true"></i>
+                    <span>Alto contraste</span>
+                </button>
+                <button type="button" id="restaurar-visualizacao">
+                    <i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i>
+                    <span>Restaurar</span>
+                </button>
+            </div>
+            <p class="acessibilidade-status" id="status-visualizacao" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="acessibilidade-secao container" aria-labelledby="titulo-praticas">
+            <div class="acessibilidade-titulo-secao">
+                <p>como reduzimos barreiras</p>
+                <h2 id="titulo-praticas">Práticas de acessibilidade</h2>
+            </div>
+            <div class="acessibilidade-praticas">
+                <article class="acessibilidade-pratica">
+                    <span><i class="bi bi-keyboard-fill" aria-hidden="true"></i></span>
+                    <h3>Navegação por teclado</h3>
+                    <p>
+                        Links, botões e campos devem poder ser acessados usando Tab e ativados
+                        com Enter ou Espaço, sem exigir o uso do mouse.
+                    </p>
+                </article>
+                <article class="acessibilidade-pratica">
+                    <span><i class="bi bi-eye-fill" aria-hidden="true"></i></span>
+                    <h3>Contraste e legibilidade</h3>
+                    <p>
+                        Texto legível, hierarquia clara de títulos e foco visível ajudam a
+                        localizar informações e acompanhar a navegação.
+                    </p>
+                </article>
+                <article class="acessibilidade-pratica">
+                    <span><i class="bi bi-card-text" aria-hidden="true"></i></span>
+                    <h3>Conteúdo compreensível</h3>
+                    <p>
+                        Linguagem direta, rótulos descritivos e instruções próximas aos campos
+                        ajudam a entender o que cada ação faz.
+                    </p>
+                </article>
+                <article class="acessibilidade-pratica">
+                    <span><i class="bi bi-universal-access-circle" aria-hidden="true"></i></span>
+                    <h3>Estrutura semântica</h3>
+                    <p>
+                        Regiões, títulos hierárquicos, listas e tabelas semânticas oferecem
+                        contexto para tecnologias assistivas.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="acessibilidade-secao acessibilidade-teclado" aria-labelledby="titulo-teclado">
+            <div class="container acessibilidade-duas-colunas">
+                <div>
+                    <div class="acessibilidade-titulo-secao">
+                        <p>navegue sem mouse</p>
+                        <h2 id="titulo-teclado">Atalhos e foco</h2>
+                    </div>
+                    <p>
+                        O foco mostra qual link ou controle receberá a próxima ação. Use a tecla
+                        Tab para avançar e Shift + Tab para voltar. Enter abre links e ativa botões;
+                        Espaço também ativa botões e caixas de seleção.
+                    </p>
+                </div>
+                <ol class="acessibilidade-passos">
+                    <li><kbd>Tab</kbd><span>Avança para o próximo item interativo.</span></li>
+                    <li><kbd>Shift</kbd> + <kbd>Tab</kbd><span>Retorna ao item interativo anterior.</span></li>
+                    <li><kbd>Enter</kbd><span>Abre o link ou confirma a ação em foco.</span></li>
+                    <li><kbd>Esc</kbd><span>Fecha diálogos quando a interface oferecer essa ação.</span></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="acessibilidade-secao container" aria-labelledby="titulo-graficos">
+            <div class="acessibilidade-titulo-secao">
+                <p>informação sem depender só da cor</p>
+                <h2 id="titulo-graficos">Gráficos também precisam de texto</h2>
+            </div>
+            <div class="acessibilidade-grafico-exemplo">
+                <div class="acessibilidade-grafico" role="img"
+                     aria-label="Exemplo: energia estimada, chuveiro 70 quilowatt-hora por mês; geladeira 45 quilowatt-hora por mês.">
+                    <div>
+                        <span>Chuveiro</span>
+                        <div class="acessibilidade-barra-fundo"><span style="width: 100%"></span></div>
+                        <strong>70 kWh/mês</strong>
+                    </div>
+                    <div>
+                        <span>Geladeira</span>
+                        <div class="acessibilidade-barra-fundo"><span style="width: 64%"></span></div>
+                        <strong>45 kWh/mês</strong>
+                    </div>
+                </div>
+                <div class="acessibilidade-alternativa">
+                    <h3>Resumo em texto</h3>
+                    <p>
+                        Neste exemplo, o chuveiro tem estimativa de 70 kWh por mês e a geladeira
+                        de 45 kWh por mês. O chuveiro apresenta o maior valor.
+                    </p>
+                </div>
+            </div>
+            <p class="acessibilidade-nota">
+                No EcoLar, estimativas e gráficos são ilustrativos; não representam medição em tempo real.
+            </p>
+        </section>
+
+        <section class="acessibilidade-secao acessibilidade-recursos" aria-labelledby="titulo-recursos">
+            <div class="container">
+                <div class="acessibilidade-titulo-secao">
+                    <p>imagens, controles e formulários</p>
+                    <h2 id="titulo-recursos">Informações identificadas</h2>
+                </div>
+                <div class="acessibilidade-recursos-grid">
+                    <article>
+                        <i class="bi bi-image" aria-hidden="true"></i>
+                        <h3>Textos alternativos</h3>
+                        <p>
+                            Imagens informativas devem descrever seu conteúdo no atributo alt.
+                            Imagens decorativas usam alt vazio para não criar ruído para leitores de tela.
+                        </p>
+                    </article>
+                    <article>
+                        <i class="bi bi-ui-checks" aria-hidden="true"></i>
+                        <h3>Links, botões e campos</h3>
+                        <p>
+                            A finalidade de cada controle deve ser clara. Campos de formulário precisam
+                            de rótulos associados, indicação de obrigatoriedade e mensagens de validação.
+                        </p>
+                    </article>
+                    <article>
+                        <i class="bi bi-broadcast" aria-hidden="true"></i>
+                        <h3>ARIA quando necessário</h3>
+                        <p>
+                            Atributos ARIA complementam a semântica nativa, por exemplo para nomear
+                            regiões, indicar estados ou anunciar uma mensagem atualizada.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="acessibilidade-contato container" aria-labelledby="titulo-feedback">
+            <div>
+                <p>ajude a melhorar</p>
+                <h2 id="titulo-feedback">Encontrou uma barreira?</h2>
+                <span>Conte à equipe qual página ou recurso apresentou dificuldade.</span>
+            </div>
+            <a href="contato.html">
+                Enviar feedback
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-equipe">
+                <a href="index.html" class="rodape-marca">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="rodape-logo">
+                    <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="rodape-logo-texto">
+                    <span class="rodape-span">consumo inteligente</span>
+                </a>
+                <p class="rodape-subtitulo">Desenvolvido pela equipe</p>
+                <ul class="lista-integrantes">
+                    <li>Abner</li>
+                    <li>Kaique</li>
+                    <li>Murilo</li>
+                    <li>Samuel</li>
+                </ul>
+                <p class="rodape-mensagem">Pequenas atitudes, grandes mudanças.</p>
+            </div>
+        </div>
+        <div class="rodape-final">
+            <p>&copy; 2026 EcoLar. Consumo inteligente.</p>
+            <p>Projeto acadêmico de Desenvolvimento Web</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const conteudoAcessivel = document.querySelector(".acessibilidade-conteudo");
+        const statusVisualizacao = document.getElementById("status-visualizacao");
+        let escalaTexto = 1;
+
+        document.getElementById("aumentar-texto").addEventListener("click", () => {
+            escalaTexto = Math.min(escalaTexto + 0.1, 1.3);
+            conteudoAcessivel.style.setProperty("--escala-texto", escalaTexto);
+            statusVisualizacao.textContent = `Tamanho do texto aumentado para ${Math.round(escalaTexto * 100)}%.`;
+        });
+
+        document.getElementById("diminuir-texto").addEventListener("click", () => {
+            escalaTexto = Math.max(escalaTexto - 0.1, 0.9);
+            conteudoAcessivel.style.setProperty("--escala-texto", escalaTexto);
+            statusVisualizacao.textContent = `Tamanho do texto ajustado para ${Math.round(escalaTexto * 100)}%.`;
+        });
+
+        document.getElementById("alternar-contraste").addEventListener("click", (evento) => {
+            const ativo = conteudoAcessivel.classList.toggle("acessibilidade-alto-contraste");
+            evento.currentTarget.setAttribute("aria-pressed", String(ativo));
+            statusVisualizacao.textContent = ativo
+                ? "Alto contraste ativado nesta página."
+                : "Alto contraste desativado.";
+        });
+
+        document.getElementById("restaurar-visualizacao").addEventListener("click", () => {
+            escalaTexto = 1;
+            conteudoAcessivel.style.removeProperty("--escala-texto");
+            conteudoAcessivel.classList.remove("acessibilidade-alto-contraste");
+            document.getElementById("alternar-contraste").setAttribute("aria-pressed", "false");
+            statusVisualizacao.textContent = "Visualização restaurada.";
+        });
+    </script>
+</body>
+</html>
