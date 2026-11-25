@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Consulte equipamentos domésticos, recursos utilizados e referências de consumo de água e energia no EcoLar.">
+    <title>Equipamentos domésticos | EcoLar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="index.html" aria-label="EcoLar - página inicial">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="logo-simbolo">
+                    <div class="logo-texto">
+                        <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="logo-nome">
+                        <span>consumo inteligente</span>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Abrir ou fechar menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="casa.html">minha casa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="equipamentos.html">equipamentos</a>
+                        </li>
+                        <li class="nav-item perfil-item">
+                            <a class="nav-link perfil-residencia" href="casa.html">
+                                <span class="avatar-residencia">R</span>
+                                <span>Residência 1</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="equipamentos-introducao container" aria-labelledby="titulo-equipamentos">
+            <div class="equipamentos-cabecalho">
+                <p class="equipamentos-etiqueta">Catálogo residencial</p>
+                <h1 id="titulo-equipamentos">Conheça o consumo dos <span>equipamentos</span></h1>
+                <p>
+                    Consulte quais recursos são utilizados em cada aparelho, entenda os fatores
+                    que influenciam o consumo e conheça formas práticas de economizar.
+                </p>
+            </div>
+        </section>
+
+        <section class="equipamentos-catalogo container" aria-labelledby="titulo-catalogo">
+            <div class="equipamentos-catalogo-cabecalho">
+                <div>
+                    <p>equipamentos cadastrados</p>
+                    <h2 id="titulo-catalogo">Por cômodo</h2>
+                </div>
+                <p class="equipamentos-contador" id="equipamentos-contador" aria-live="polite">
+                    8 equipamentos
+                </p>
+            </div>
+
+            <div class="equipamentos-filtros" role="group" aria-label="Filtrar equipamentos por categoria">
+                <button class="equipamento-filtro ativo" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+                <button class="equipamento-filtro" type="button" data-filtro="banheiro" aria-pressed="false">Banheiro</button>
+                <button class="equipamento-filtro" type="button" data-filtro="cozinha" aria-pressed="false">Cozinha</button>
+                <button class="equipamento-filtro" type="button" data-filtro="lavanderia" aria-pressed="false">Lavanderia</button>
+                <button class="equipamento-filtro" type="button" data-filtro="sala" aria-pressed="false">Sala</button>
+                <button class="equipamento-filtro" type="button" data-filtro="outros" aria-pressed="false">Outros</button>
+            </div>
+
+            <div class="equipamentos-grid" id="equipamentos-grid">
+                <article class="equipamento-card" data-categoria="banheiro">
+                    <div class="equipamento-card-cabecalho">
+                        <span class="equipamento-icone icone-energia"><i class="bi bi-droplet-fill" aria-hidden="true"></i></span>
+                        <span class="equipamento-recurso recurso-ambos">Água + energia</span>
+                    </div>
+                    <h3>Chuveiro elétrico</h3>
+                    <p class="equipamento-descricao">Aquecimento da água para o banho, influenciado pela potência e pelo tempo de uso.</p>
+                    <dl class="equipamento-referencias">
+                        <div><dt>Energia</dt><dd>kWh por uso</dd></div>
+                        <div><dt>Água</dt><dd>litros por minuto</dd></div>
+                    </dl>
+                    <p class="equipamento-dica"><i class="bi bi-leaf-fill" aria-hidden="true"></i><span>Reduza o tempo de banho e mantenha a potência adequada.</span></p>
+                </article>
+
+                <article class="equipamento-card" data-categoria="banheiro cozinha">
+                    <div class="equipamento-card-cabecalho">
+                        <span class="equipamento-icone icone-agua"><i class="bi bi-faucet" aria-hidden="true"></i></span>
+                        <span class="equipamento-recurso recurso-agua">Água</span>
+                    </div>
+                    <h3>Torneira</h3>
+                    <p class="equipamento-descricao">Consumo usado em higiene, preparo de alimentos e limpeza da residência.</p>
+                    <dl class="equipamento-referencias">
+                        <div><dt>Consumo</dt><dd>litros por minuto</dd></div>
+                        <div><dt>Referência</dt><dd>L/minuto de vazão</dd></div>
+                    </dl>
+                    <p class="equipamento-dica"><i class="bi bi-leaf-fill" aria-hidden="true"></i><span>Feche a torneira durante escovação e ensabuação.</span></p>
+                </article>
+
+                <article class="equipamento-card" data-categoria="cozinha">
+                    <div class="equipamento-card-cabecalho">
+                        <span class="equipamento-icone icone-energia"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></span>
+                        <span class="equipamento-recurso recurso-energia">Energia</span>
+                    </div>
+                    <h3>Geladeira</h3>
+                    <p class="equipamento-descricao">Funcionamento contínuo para conservação dos alimentos ao longo do dia.</p>
+                    <dl class="equipamento-referencias">
+                        <div><dt>Consumo</dt><dd>kWh por mês</dd></div>
+                        <div><dt>Influência</dt><dd>potência e abertura</dd></div>
+                    </dl>
+                    <p class="equipamento-dica"><i class="bi bi-leaf-fill" aria-hidden="true"></i><span>Evite abertura frequente e mantenha borrachas vedando.</span></p>
+                </article>
+
+                <article class="equipamento-card" data-categoria="lavanderia">
+                    <div class="equipamento-card-cabecalho">
+                        <span class="equipamento-icone icone-ambos"><i class="bi bi-water" aria-hidden="true"></i></span>
+                        <span class="equipamento-recurso recurso-ambos">Água + energia</span>
+                    </div>
+                    <h3>Máquina de lavar</h3>
+                    <p class="equipamento-descricao">Consome água no ciclo e energia no aquecimento e funcionamento do motor.</p>
+                    <dl class="equipamento-referencias">
+                        <div><dt>Água</dt><dd>litros por ciclo</dd></div>
+                        <div><dt>Energia</dt><dd>kWh por ciclo</dd></div>
+                    </dl>
+                    <p class="equipamento-dica"><i class="bi bi-leaf-fill" aria-hidden="true"></i><span>Use ciclos completos e a temperatura necessária.</span></p>
+                </article>
+
+                <article class="equipamento-card" data-categoria="outros sala banheiro cozinha">
+                    <div class="equipamento-card-cabecalho">
+                        <span class="equipamento-icone icone-energia"><i class="bi bi-lightbulb-fill" aria-hidden="true"></i></span>
+                        <span class="equipamento-recurso recurso-energia">Energia</span>
+                    </div>
+                    <h3>Lâmpada</h3>
+                    <p class="equipamento-descricao">Iluminação doméstica cujo consumo depende da potência e das horas ligadas.</p>
+                    <dl class="equipamento-referencias">
+                        <div><dt>Consumo</dt><dd>kWh por hora</dd></div>
+                        <div><dt>Parâmetro</dt><dd>potência em watts</dd></div>
+                    </dl>
+                    <p class="equipamento-dica"><i class="bi bi-leaf-fill" aria-hidden="true"></i><span>Prefira LED e apague luzes em ambientes vazios.</span></p>
+                </article>
+
+                <article class="equipamento-card" data-categoria="sala">
+                    <div class="equipamento-card-cabecalho">
+                        <span class="equipamento-icone icone-energia"><i class="bi bi-tv-fill" aria-hidden="true"></i></span>
+                        <span class="equipamento-recurso recurso-energia">Energia</span>
+                    </div>
+                    <h3>Televisor</h3>
+                    <p class="equipamento-descricao">Consumo relacionado ao tamanho da tela, tecnologia e tempo de reprodução.</p>
+                    <dl class="equipamento-referencias">
+                        <div><dt>Consumo</dt><dd>kWh por hora</dd></div>
+                        <div><dt>Parâmetro</dt><dd>potência em watts</dd></div>
+                    </dl>
+                    <p class="equipamento-dica"><i class="bi bi-leaf-fill" aria-hidden="true"></i><span>Desligue o aparelho em vez de deixá-lo no modo espera.</span></p>
+                </article>
+
+                <article class="equipamento-card" data-categoria="sala outros">
+                    <div class="equipamento-card-cabecalho">
+                        <span class="equipamento-icone icone-energia"><i class="bi bi-snow" aria-hidden="true"></i></span>
+                        <span class="equipamento-recurso recurso-energia">Energia</span>
+                    </div>
+                    <h3>Ar-condicionado</h3>
+                    <p class="equipamento-descricao">Climatização da residência, fortemente influenciada pelo tempo e pela temperatura configurada.</p>
+                    <dl class="equipamento-referencias">
+                        <div><dt>Consumo</dt><dd>kWh por hora</dd></div>
+                        <div><dt>Influência</dt><dd>BTU, uso e isolamento</dd></div>
+                    </dl>
+                    <p class="equipamento-dica"><i class="bi bi-leaf-fill" aria-hidden="true"></i><span>Limpe filtros e mantenha portas e janelas fechadas.</span></p>
+                </article>
+
+                <article class="equipamento-card" data-categoria="outros">
+                    <div class="equipamento-card-cabecalho">
+                        <span class="equipamento-icone icone-gastos"><i class="bi bi-wifi" aria-hidden="true"></i></span>
+                        <span class="equipamento-recurso recurso-energia">Energia</span>
+                    </div>
+                    <h3>Roteador Wi-Fi</h3>
+                    <p class="equipamento-descricao">Equipamento que permanece ligado e tem consumo reduzido ao longo de muitas horas.</p>
+                    <dl class="equipamento-referencias">
+                        <div><dt>Consumo</dt><dd>kWh por mês</dd></div>
+                        <div><dt>Parâmetro</dt><dd>potência em watts</dd></div>
+                    </dl>
+                    <p class="equipamento-dica"><i class="bi bi-leaf-fill" aria-hidden="true"></i><span>Desligue apenas quando o uso prolongado não for necessário.</span></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="equipamentos-nota container" aria-labelledby="titulo-nota">
+            <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+            <div>
+                <h2 id="titulo-nota">Valores ilustrativos</h2>
+                <p>
+                    Os dados desta página são referências educacionais. O consumo real varia conforme
+                    modelo, potência, tarifa, duração de uso e condições da residência.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-equipe">
+                <a href="index.html" class="rodape-marca">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="rodape-logo">
+                    <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="rodape-logo-texto">
+                    <span class="rodape-span">consumo inteligente</span>
+                </a>
+                <p class="rodape-subtitulo">Desenvolvido pela equipe</p>
+                <ul class="lista-integrantes">
+                    <li>Abner</li>
+                    <li>Kaique</li>
+                    <li>Murilo</li>
+                    <li>Samuel</li>
+                </ul>
+                <p class="rodape-mensagem">Pequenas atitudes, grandes mudanças.</p>
+            </div>
+        </div>
+        <div class="rodape-final">
+            <p>&copy; 2026 EcoLar. Consumo inteligente.</p>
+            <p>Projeto acadêmico de Desenvolvimento Web</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const botoesFiltro = document.querySelectorAll(".equipamento-filtro");
+        const equipamentos = document.querySelectorAll(".equipamento-card");
+        const contador = document.getElementById("equipamentos-contador");
+
+        botoesFiltro.forEach((botao) => {
+            botao.addEventListener("click", () => {
+                const filtro = botao.dataset.filtro;
+                let quantidade = 0;
+
+                botoesFiltro.forEach((item) => {
+                    item.classList.remove("ativo");
+                    item.setAttribute("aria-pressed", "false");
+                });
+                botao.classList.add("ativo");
+                botao.setAttribute("aria-pressed", "true");
+
+                equipamentos.forEach((equipamento) => {
+                    const categorias = equipamento.dataset.categoria.split(" ");
+                    const visivel = filtro === "todos" || categorias.includes(filtro);
+                    equipamento.hidden = !visivel;
+                    if (visivel) quantidade += 1;
+                });
+
+                contador.textContent = `${quantidade} equipamento${quantidade === 1 ? "" : "s"}`;
+            });
+        });
+    </script>
+</body>
+</html>

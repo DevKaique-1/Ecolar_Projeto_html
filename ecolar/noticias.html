@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Notícias, dicas e vídeos sobre economia de água, eficiência energética e consumo consciente no EcoLar.">
+    <title>Notícias e dicas | EcoLar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="index.html" aria-label="EcoLar - página inicial">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="logo-simbolo">
+                    <div class="logo-texto">
+                        <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="logo-nome">
+                        <span>consumo inteligente</span>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Abrir ou fechar menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="casa.html">minha casa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipamentos.html">equipamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="noticias.html">dicas</a>
+                        </li>
+                        <li class="nav-item perfil-item">
+                            <a class="nav-link perfil-residencia" href="casa.html">
+                                <span class="avatar-residencia">R</span>
+                                <span>Residência 1</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="noticias-introducao container" aria-labelledby="titulo-noticias">
+            <div class="noticias-cabecalho">
+                <p>conteúdos e recomendações</p>
+                <h1 id="titulo-noticias">Dicas para consumir <span>com consciência</span></h1>
+                <p>
+                    Conheça práticas simples para identificar desperdícios, economizar água e energia
+                    e utilizar os equipamentos domésticos de forma mais eficiente.
+                </p>
+            </div>
+        </section>
+
+        <section class="noticias-destaques container" aria-labelledby="titulo-destaques">
+            <div class="noticias-titulo-secao">
+                <p>orientações práticas</p>
+                <h2 id="titulo-destaques">Destaques da semana</h2>
+            </div>
+
+            <div class="noticias-destaques-grid">
+                <article class="noticia-card noticia-card-destaque">
+                    <span class="noticia-categoria categoria-agua">
+                        <i class="bi bi-droplet-fill" aria-hidden="true"></i>
+                        água
+                    </span>
+                    <h3>Pequenas mudanças no banho podem gerar grandes economias</h3>
+                    <p>
+                        Reduzir alguns minutos no chuveiro e desligar o aquecimento ao ensaboar
+                        ajudam a diminuir o consumo de água e de energia.
+                    </p>
+                    <ul>
+                        <li>Feche o chuveiro ao ensaboar.</li>
+                        <li>Evite banhos muito longos.</li>
+                        <li>Verifique vazamentos em registros e torneiras.</li>
+                    </ul>
+                </article>
+
+                <article class="noticia-card">
+                    <span class="noticia-categoria categoria-energia">
+                        <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+                        energia
+                    </span>
+                    <h3>Geladeira eficiente começa com manutenção simples</h3>
+                    <p>
+                        Borrachas danificadas e pouca ventilação podem fazer o compressor trabalhar
+                        por mais tempo do que o necessário.
+                    </p>
+                    <ul>
+                        <li>Evite abrir a porta com frequência.</li>
+                        <li>Mantenha borrachas limpas e vedando.</li>
+                        <li>Deixe espaço para circulação de ar.</li>
+                    </ul>
+                </article>
+
+                <article class="noticia-card">
+                    <span class="noticia-categoria categoria-geral">
+                        <i class="bi bi-house-gear-fill" aria-hidden="true"></i>
+                        casa
+                    </span>
+                    <h3>Identifique desperdícios observando hábitos e contas</h3>
+                    <p>
+                        Compare o consumo entre meses e registre o tempo de uso dos principais
+                        equipamentos para localizar oportunidades de economia.
+                    </p>
+                    <ul>
+                        <li>Observe mudanças de consumo sem explicação.</li>
+                        <li>Anote horas de uso e potenciais vazamentos.</li>
+                        <li>Compare antes e depois das mudanças.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="noticias-dicas container" aria-labelledby="titulo-dicas">
+            <div class="noticias-titulo-secao">
+                <p>guia rápido</p>
+                <h2 id="titulo-dicas">Dicas por equipamento</h2>
+            </div>
+
+            <div class="noticias-dicas-grid">
+                <article>
+                    <i class="bi bi-droplet-fill" aria-hidden="true"></i>
+                    <h3>Chuveiro e torneiras</h3>
+                    <p>Instale aeradores, feche a torneira ao ensaboar e conserte gotejamentos rapidamente.</p>
+                </article>
+                <article>
+                    <i class="bi bi-washer" aria-hidden="true"></i>
+                    <h3>Máquina de lavar</h3>
+                    <p>Prefira cargas completas e ciclos adequados à quantidade e ao tipo de roupa.</p>
+                </article>
+                <article>
+                    <i class="bi bi-lightbulb-fill" aria-hidden="true"></i>
+                    <h3>Iluminação</h3>
+                    <p>Substitua lâmpadas antigas por LED e desligue a luz em ambientes vazios.</p>
+                </article>
+                <article>
+                    <i class="bi bi-snow" aria-hidden="true"></i>
+                    <h3>Ar-condicionado</h3>
+                    <p>Limpe os filtros, feche portas e janelas e ajuste uma temperatura confortável.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="noticias-videos container" aria-labelledby="titulo-videos">
+            <div class="noticias-titulo-secao">
+                <p>aprenda em vídeo</p>
+                <h2 id="titulo-videos">Conteúdo educativo</h2>
+            </div>
+
+            <div class="noticias-videos-grid">
+                <article class="video-card">
+                    <div class="video-responsivo">
+                        <iframe
+                            src="https://www.youtube.com/embed/WWHRc-eBofo"
+                            title="Sabesp: Economize Água"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3>Economize água no dia a dia</h3>
+                    <p>Vídeo institucional da Sabesp com orientações práticas de economia de água.</p>
+                    <a href="https://www.youtube.com/watch?v=WWHRc-eBofo" target="_blank" rel="noopener noreferrer">
+                        assistir no YouTube
+                        <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="video-card">
+                    <div class="video-responsivo">
+                        <iframe
+                            src="https://www.youtube.com/embed/nPN4NodtZww"
+                            title="Sabesp: Banho em 1 hit"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3>Como reduzir o consumo no banho</h3>
+                    <p>Dicas da Sabesp para diminuir desperdício de água durante o banho.</p>
+                    <a href="https://www.youtube.com/watch?v=nPN4NodtZww" target="_blank" rel="noopener noreferrer">
+                        assistir no YouTube
+                        <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="video-card">
+                    <div class="video-responsivo">
+                        <iframe
+                            src="https://www.youtube.com/embed/0NY7ZVb3lms"
+                            title="IEI Brasil: como comparar produtos eficientes"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3>Escolha produtos mais eficientes</h3>
+                    <p>O IEI Brasil explica como usar a Etiqueta Nacional de Conservação de Energia.</p>
+                    <a href="https://www.youtube.com/watch?v=0NY7ZVb3lms" target="_blank" rel="noopener noreferrer">
+                        assistir no YouTube
+                        <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="noticias-fontes container" aria-labelledby="titulo-fontes">
+            <div>
+                <i class="bi bi-bookmarks-fill" aria-hidden="true"></i>
+                <h2 id="titulo-fontes">Referências utilizadas</h2>
+            </div>
+            <ul>
+                <li>
+                    <a href="https://www.sabesp.com.br/" target="_blank" rel="noopener noreferrer">Sabesp</a>
+                    — orientações sobre uso eficiente da água.
+                </li>
+                <li>
+                    <a href="https://ieibrasil.org.br/" target="_blank" rel="noopener noreferrer">IEI Brasil</a>
+                    — eficiência energética e interpretação da etiqueta de equipamentos.
+                </li>
+                <li>
+                    <a href="https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2021/11/conheca-a-etiqueta-nacional-de-conservacao-de-energia"
+                       target="_blank" rel="noopener noreferrer">Governo Federal — INMETRO</a>
+                    — informações sobre o PBE e a Etiqueta Nacional de Conservação de Energia.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-equipe">
+                <a href="index.html" class="rodape-marca">
+                    <img src="img/ecolar-logo-sem-tipagem.svg" alt="" class="rodape-logo">
+                    <img src="img/ecolar-logo-apenas-tipagem.svg" alt="EcoLar" class="rodape-logo-texto">
+                    <span class="rodape-span">consumo inteligente</span>
+                </a>
+                <p class="rodape-subtitulo">Desenvolvido pela equipe</p>
+                <ul class="lista-integrantes">
+                    <li>Abner</li>
+                    <li>Kaique</li>
+                    <li>Murilo</li>
+                    <li>Samuel</li>
+                </ul>
+                <p class="rodape-mensagem">Pequenas atitudes, grandes mudanças.</p>
+            </div>
+        </div>
+        <div class="rodape-final">
+            <p>&copy; 2026 EcoLar. Consumo inteligente.</p>
+            <p>Projeto acadêmico de Desenvolvimento Web</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
