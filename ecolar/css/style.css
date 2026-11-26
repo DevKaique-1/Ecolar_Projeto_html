@@ -783,7 +783,9 @@ body {
     .botao-explorar {
         min-height: 100px;
     }
-
+    .botao-explorar-destaque{
+        grid-column: span 1;
+    }
     .rodape {
         margin-top: 45px;
         padding: 32px 22px 0;
